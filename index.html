@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard - 3-Mind Oven</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      color: #FF6A00;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .buttons-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .admin-btn {
+      background: #FF6A00;
+      color: white;
+      padding: 25px 40px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      min-width: 200px;
+      text-align: center;
+    }
+    .admin-btn:hover {
+      background: #e55d00;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Admin Dashboard</h1>
+  <div class="buttons-container">
+    <button class="admin-btn" onclick="window.location.href='add_product.html'">Add Product</button>
+    <button class="admin-btn" onclick="window.location.href='products_list.html'">Edit Products</button>
+  </div>
+
+</body>
+</html>
